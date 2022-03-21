@@ -2,9 +2,6 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
-//import org.apache.commons.lang.*;
-//import org.apache.commons.lang3.StringUtils;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -51,7 +48,6 @@ public class DataCreator {
         }
     }
 
-
     public void displayFilmInformations(Library filmList) {
         System.out.println("Here You have a portion of informations about one of the films from Our database that We recommend");
         Random random = new Random();
@@ -69,11 +65,9 @@ public class DataCreator {
         System.out.print("Starring actors: ");
         for (Actor actor : actors) {
             System.out.print(actor.getName() + "" + actor.getSecondName() + ",");
-
         }
         System.out.println();
     }
-
 
     public ArrayList<Film> filterFilmsDependingOnActor(Library filmsList) throws IOException {
 
@@ -82,7 +76,6 @@ public class DataCreator {
         String name = scanner.nextLine();
         System.out.println("Give actors second name");
         String secondName = scanner.nextLine();
-//        ArrayList<Actor> actorsList = new ArrayList<>();
         ArrayList<Film> filteredFilmsList = new ArrayList<>();
 
         for (Film film : filmsList.getFilms()){
@@ -95,18 +88,6 @@ public class DataCreator {
                 }
             }
         }
-
-//
-//        for (Film film : filmsList.getFilms()) {
-//            int i = 0;
-//            if (film.getActors().get(i).getName().equals(name)) {
-//                if (film.getActors().get(i).getSecondName().equals(secondName)) {
-//                    filteredFilmsList.add(film);
-//                    i++;
-//                }
-//            }
-//
-//        }
         return filteredFilmsList;
     }
 
