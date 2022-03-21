@@ -2,6 +2,7 @@ import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -12,7 +13,6 @@ import java.util.Scanner;
 public class DataCreator {
 
     UserInputStorage userInputStorage = new UserInputStorage();
-    MovieLibrary movieLibrary = new MovieLibrary();
 
     public void displayMenu() {
         System.out.println("Menu:");
@@ -78,11 +78,11 @@ public class DataCreator {
         String secondName = scanner.nextLine();
         ArrayList<Film> filteredFilmsList = new ArrayList<>();
 
-        for (Film film : filmsList.getFilms()){
+        for (Film film : filmsList.getFilms()) {
             film.getActors();
-            for (Actor actor : film.getActors()){
-                if(actor.getName().equals(name)){
-                    if(actor.getSecondName().equals(secondName)){
+            for (Actor actor : film.getActors()) {
+                if (actor.getName().equals(name)) {
+                    if (actor.getSecondName().equals(secondName)) {
                         filteredFilmsList.add(film);
                     }
                 }
@@ -105,7 +105,7 @@ public class DataCreator {
 
     public void generateOutput() throws IOException, URISyntaxException {
         String option = userInputStorage.chooseMenuOption();
-        if (StringUtils.isNumeric(option)){
+        if (StringUtils.isNumeric(option)) {
             switch (option) {
                 case "1":
                     displayTitle(filterFilmsDependingOnDate(deserialize()));
@@ -123,15 +123,11 @@ public class DataCreator {
 
                 default:
                     System.out.println("Incorrect value");
-
             }
         } else {
             System.out.println("Incorrect value. Given value is not a number");
         }
-
-
     }
-
 
     public Library deserialize() throws IOException {
 
@@ -139,37 +135,8 @@ public class DataCreator {
         objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
 
         Library library = objectMapper.readValue(new File("src/main/java/film.json"), Library.class);
-//        System.out.println(library);
-
         return library;
     }
-//    public List<Film> deserialize() throws JsonParseException, JsonMappingException, IOException, URISyntaxException {
-//
-////        ObjectMapper objectMapper = new ObjectMapper();
-////
-////        URL resource = DataCreator.class.getClassLoader().getResource("film.json");
-////        assert resource != null;
-////        byte[] bytes = Files.readAllBytes(Path.of("C:/Selenium_Java_course/HomeworkLesson5/src/main/java/film.json"));
-////        String json = new String(bytes);
-////
-////        JsonNode node = objectMapper.readTree(json);
-////        ArrayList<Films> parsedFilmList = new ArrayList<>();
-////        if (node.isArray()) {
-////            for (JsonNode jsonNode : node) {
-////                Films film = objectMapper.treeToValue(jsonNode, Films.class);
-////                parsedFilmList.add(film);
-////            }
-////        }
-////           return parsedFilmList;
-//        ObjectMapper objectMapper = new ObjectMapper();
-//        objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
-////        Films films = objectMapper.readValue(new File("src/main/java/film.json"), Films.class);
-//        Library library = objectMapper.readValue(new File("src/main/java/film.json"), Library.class);
-//        System.out.println(library);
-//        List<Film> filmsList = objectMapper.readValue(new File("src/main/java/film.json"), new TypeReference<List<Film>>() {});
-//        return filmsList;
-//    }
-
 }
 
 
