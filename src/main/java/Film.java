@@ -1,35 +1,13 @@
 import java.util.ArrayList;
 
 public class Film {
+    private String title;
+    private int yearOfProduction;
+    private Director director;
+    private String genre;
+    private ArrayList<Actor> actors;
 
-    //Każdy film powinien mieć: nazwę, tytuł, rok wydania, reżysera, gatunek oraz listę aktorów
-    String title;
-    int yearOfProduction;
-    String director;
-    String genre;
-    ArrayList<Actors> actors;
-
-    //    public Films(String title, int yearOfProduction, String director, String genre, ArrayList<Actors> actors) {
-//        this.title = title;
-//        this.yearOfProduction = yearOfProduction;
-//        this.director = director;
-//        this.genre = genre;
-//        this.actors = actors;
-//    }
     public Film() {
-
-    }
-
-    public ArrayList<Actors> getActors() {
-        return actors;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public String getDirector() {
-        return director;
     }
 
     public int getYearOfProduction() {
@@ -38,5 +16,37 @@ public class Film {
 
     public String getTitle() {
         return title;
+    }
+
+    public Director getDirector() {
+        return director;
+    }
+
+    public ArrayList<Actor> getActors() {
+        return actors;
+    }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setActors(ArrayList<Actor> actors) {
+        this.actors = actors;
+    }
+
+    public void setDirector(Director director) {
+        this.director = director;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setYearOfProduction(int yearOfProduction) {
+        this.yearOfProduction = yearOfProduction;
     }
 }

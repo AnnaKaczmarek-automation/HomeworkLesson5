@@ -1,14 +1,14 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
+    private ArrayList<Film> films;
 
-
-    private List<Film> films;
-
-    public Library(List<Film> films) {
-        this.films = films;
+    public ArrayList<Film> getFilms() {
+        return films;
     }
-    public Library() {
 
+    public void setFilms(ArrayList<Film> films) {
+        this.films = films;
     }
 }

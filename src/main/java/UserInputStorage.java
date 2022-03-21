@@ -1,25 +1,26 @@
+import org.apache.commons.lang3.StringUtils;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class UserInputStorage {
 
-    public int chooseMenuOption() {
+    public String chooseMenuOption() {
         System.out.println("Select one of given options");
         Scanner scanner = new Scanner(System.in);
-        int usersChoice = Integer.parseInt(scanner.nextLine());
+        String usersChoice = scanner.nextLine();
         return usersChoice;
     }
 
-    public Integer chooseFirstDate(){
+    public Integer chooseFirstDate() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Select first year in a year range");
         int firstYear = scanner.nextInt();
-
         return firstYear;
     }
 
-    public Integer chooseSecondDate(){
+    public Integer chooseSecondDate() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Select second year in a year range");
         int secondYear = scanner.nextInt();

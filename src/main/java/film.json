@@ -30,12 +30,11 @@
     {
       "title": "A Beautiful Mind",
       "yearOfProduction": 2001,
-      "director": [
-        {
-          "name": "Ron",
-          "secondName": "Howard"
-        }
-      ],
+      "director":
+      {
+        "name": "Ron",
+        "secondName": "Howard"
+      },
       "genre": "Fantasy",
       "actors": [
         {
@@ -44,7 +43,7 @@
         },
         {
           "name": "Paul",
-          "secondName": " Bettany"
+          "secondName": "Bettany"
         },
         {
           "name": "Jennifer",
@@ -57,30 +56,13 @@
       ]
     },
     {
-      "title": "Green book",
-      "yearOfProduction": 2018,
-      "director": "Peter Farrelly",
-      "genre": "Comedy",
-      "actors": [
-        {
-          "name": "Viggo ",
-          "secondName": "Mortensen"
-        },
-        {
-          "name": "Mahershala",
-          "secondName": "Ali"
-        }
-      ]
-    },
-    {
       "title": "Gladiator",
       "yearOfProduction": 2000,
-      "director": [
-        {
-          "name": "Ridley",
-          "secondName": "Scott"
-        }
-      ],
+      "director":
+      {
+        "name": "Ridley",
+        "secondName": "Scott"
+      },
       "genre": "drama",
       "actors": [
         {
@@ -89,7 +71,7 @@
         },
         {
           "name": "Joaquin",
-          "secondName": "Joaquin Phoenix"
+          "secondName": "Phoenix"
         },
         {
           "name": "Richard",
@@ -100,12 +82,11 @@
     {
       "title": "Braveheart",
       "yearOfProduction": 1995,
-      "director": [
-        {
-          "name": "Mel",
-          "secondName": "Gibson"
-        }
-      ],
+      "director":
+      {
+        "name": "Mel",
+        "secondName": "Gibson"
+      },
       "genre": "drama",
       "actors": [
         {
@@ -121,12 +102,11 @@
     {
       "title": "Conspiracy theory",
       "yearOfProduction": 1997,
-      "director": [
-        {
-          "name": "Richard",
-          "secondName": "Donner"
-        }
-      ],
+      "director":
+      {
+        "name": "Richard",
+        "secondName": "Donner"
+      },
       "genre": "thiller",
       "actors": [
         {
@@ -146,12 +126,11 @@
     {
       "title": "Philadelphia",
       "yearOfProduction": 1993,
-      "director": [
-        {
-          "name": "Jonathan",
-          "secondName": "Demme"
-        }
-      ],
+      "director":
+      {
+        "name": "Jonathan",
+        "secondName": "Demme"
+      },
       "genre": "drama",
       "actors": [
         {
@@ -167,118 +146,8 @@
           "secondName": "Banderas"
         }
       ]
-    },
-    {
-      "title": "Empire of the Sun",
-      "yearOfProduction": 1987,
-      "director": [
-        {
-          "name": "Steven",
-          "secondName": "Spielberg"
-        }
-      ],
-      "genre": "drama",
-      "actors": [
-        {
-          "name": "Christian",
-          "secondName": "Bale"
-        },
-        {
-          "name": "John",
-          "secondName": "Malkovich"
-        },
-        {
-          "name": "Miranda",
-          "secondName": "Richardson"
-        }
-      ]
-    },
-    {
-      "title": "Red",
-      "yearOfProduction": 2010,
-      "director": [
-        {
-          "name": "Robert",
-          "secondName": "Schwentke"
-        }
-      ],
-      "genre": "comedy",
-      "actors": [
-        {
-          "name": "Bruce",
-          "secondName": "Willis"
-        },
-        {
-          "name": "Morgan",
-          "secondName": "Freeman"
-        },
-        {
-          "name": "Helen",
-          "secondName": "Mirren"
-        }
-      ]
-    },
-    {
-      "title": "Mamma Mia!",
-      "yearOfProduction": 2008,
-      "director": [
-        {
-          "name": "Phyllida",
-          "secondName": "Lloyd"
-        }
-      ],
-      "genre": "comedy",
-      "actors": [
-        {
-          "name": "Meryl",
-          "secondName": "Streep"
-        },
-        {
-          "name": "Pierce",
-          "secondName": "Brosnan"
-        },
-        {
-          "name": "Colin",
-          "secondName": "Firth"
-        },
-        {
-          "name": "Stellan",
-          "secondName": "Skarsgård"
-        },
-        {
-          "name": "Amanda",
-          "secondName": "Seyfried"
-        }
-      ]
-    },
-    {
-      "title": "Saving Mr. Banks",
-      "yearOfProduction": 2013,
-      "director": [
-        {
-          "name": "John Lee",
-          "secondName": "Hancock"
-        }
-      ],
-      "genre": "biography",
-      "actors": [
-        {
-          "name": "Tom",
-          "secondName": "Hanks"
-        },
-        {
-          "name": "Emma",
-          "secondName": "Thompson"
-        },
-        {
-          "name": "Paul",
-          "secondName": "Giamatti"
-        },
-        {
-          "name": "Colin",
-          "secondName": "Farrell"
-        }
-      ]
     }
+
   ]
 }
+

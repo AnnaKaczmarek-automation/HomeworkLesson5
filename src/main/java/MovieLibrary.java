@@ -1,7 +1,7 @@
-import com.fasterxml.jackson.core.JsonParseException;
+
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.*;
@@ -14,18 +14,24 @@ import java.util.List;
 
 public class MovieLibrary {
     public static void main(String[] args) throws IOException, URISyntaxException {
+//        ObjectMapper objectMapper = new ObjectMapper();
+//        objectMapper.setVisibility(PropertyAccessor.FIELD, JsonAutoDetect.Visibility.ANY);
+//
+//        Library library = objectMapper.readValue(new File("src/main/java/film.json"), Library.class);
+//        System.out.println(library);
+//        List<Film> filmsList = objectMapper.readValue(new File("src/main/java/film.json"), new TypeReference<List<Film>>() {});
 
         DataCreator dataCreator = new DataCreator();
         UserInputStorage userInputStorage = new UserInputStorage();
 
-
-
         while (true) {
             dataCreator.displayMenu();
-            userInputStorage.chooseMenuOption();
             dataCreator.generateOutput();
-//    dataCreator.displayTitle(dataCreator.filterFilmsDependingOnDate(dataCreator.deserialize()));
-
         }
+
+//        System.out.println(library.getFilms().get(0).getActors().get(0).getName());
     }
+
 }
+
+
